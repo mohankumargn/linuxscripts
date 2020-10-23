@@ -1,0 +1,13 @@
+#! /bin/bash
+# Author: Mohan
+# Date: 08/08/2020
+# Description: This script will disable inactive user account with for loop
+# Modified: 08/08/2020
+
+
+a=`lastlog | tail -n+2 | grep  'test' | awk '{print $1}'`
+for i in $a
+do	
+	echo $i
+	#usermod -L $i
+done

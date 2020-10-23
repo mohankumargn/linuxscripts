@@ -1,0 +1,17 @@
+#! /bin/bash
+# Author: MOhan
+# Date: 08/11/2020
+# Description: This script will for simplecount
+# Modified: 08/11/2020
+total=`ls -l mohan* |  wc -l`
+echo It will take $total seconda to assign a permission..
+echo 
+
+for i in mohan.*
+do
+   echo Assign write permission to $i
+   chmod a+w $i
+   sleep 1
+done
+
+

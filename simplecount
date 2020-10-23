@@ -1,0 +1,11 @@
+#! /bin/bash
+# Author: MOhan
+# Date: 08/11/2020
+# Description: This script will for simplecount
+# Modified: 08/11/2020
+
+for i in {1..15}
+do
+    echo $i
+    sleep 0
+done

@@ -1,0 +1,18 @@
+#! /bin/bash
+# Author: Mohan
+# Date: 08/08/2020
+# Description: This script will delete system from inventory database file
+# Modified: 08/08/2020
+
+echo Please enter hostname or Ip address?
+read hostIp
+echo
+	grep -q $hostIp /home/mohan/ps/database
+	if [ $? -eq 0 ]
+	then
+	echo
+	sed -i '/'$hostIp'/d' /home/mohan/ps/database
+	echo $hostIp has been deleted
+	else
+	echo record $hostIp does not exist
+	fi

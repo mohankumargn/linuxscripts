@@ -1,0 +1,16 @@
+#! /bin/bash
+# Author: Mohan
+# Date: 08/08/2020
+# Description: This script will verified total number of files
+# Modified: 08/08/2020
+
+
+# Defining variable a
+
+a=`ls -l file* | wc -l`
+	if [ $a -eq 25 ]
+	then	
+	echo yes there are $a files
+	else
+	echo files are less then 20
+	fi

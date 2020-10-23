@@ -1,0 +1,20 @@
+#! /bin/bash
+#Author
+#Date
+#Desc
+a=`hostname`
+echo Hellow my server name is $a
+echo
+echo What is your name?
+read b
+echo
+echo What is your profession?
+read c
+echo
+echo What is your favorite show?
+read d
+echo
+echo Hellow $b
+echo Your prifessin $c is awesome
+echo $d is good show
+echo

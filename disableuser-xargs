@@ -1,0 +1,8 @@
+#! /bin/bash
+# Author: Mohan
+# Date: 08/08/2020
+# Description: This script will disable inactive user account with xargs
+# Modified: 08/08/2020
+
+lastlog | tail -n+2 | grep 'test' | awk '{print $1}' | xargs -I{} usermod -L{}
+

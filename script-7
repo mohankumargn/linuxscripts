@@ -1,0 +1,8 @@
+#! /bin/bash
+# If the output is either MOnday or Tuesday
+if [ "$a" = Monday ] || [ "$a" = Tuesday ]
+if teat -s error.txt
+if [ $? -eq 0 ]
+if [ -e /mohan/home/script-7 ]
+if [ "$a" != "" ]
+if [ error_code != "" ]

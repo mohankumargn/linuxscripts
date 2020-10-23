@@ -1,0 +1,12 @@
+#! /bin/bash
+# Author: Mohan
+# Date: 08/08/2020
+# Description: This script will create user account
+# Modified: 08/08/2020
+
+echo "Please provide a user name?"
+read u
+echo
+
+useradd $u
+echo $u account has been created

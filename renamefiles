@@ -1,0 +1,10 @@
+#! /bin/bash
+# Author: Mohan
+# Date: 08/12/2020
+# Description: This script will rename with ending .txt
+# Modified: 08/12/2020
+
+for filename in *.txt
+do
+  mv $filename ${filename%.txt}.none
+done

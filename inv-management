@@ -1,0 +1,19 @@
+#! /bin/bash
+# Author: Mohan
+# Date: 08/08/2020
+# Description: This script will ask to add or delete a record from database file
+# Modified: 08/08/2020
+
+clear
+echo
+echo Please select of the following options?
+echo
+echo 'a = Add a record'
+echo 'd = Delete a record'
+echo
+read choice
+	case $choice in
+	a) /home/mohan/ps/add-record;;
+	d) /home/mohan/ps/del-record;;
+	*) echo Invalid choice - Bye.
+	esac

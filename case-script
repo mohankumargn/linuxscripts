@@ -1,0 +1,21 @@
+#! /bin/bash
+#This script is created by me
+
+echo
+echo Please choose one of the option below
+echo
+echo ' a = Display Date and Time '
+echo ' b = List file and directories '
+echo ' c = List user logged in '
+echo ' d = Check system uptime '
+echo
+
+           read choices
+           case $choices in
+a) date;;
+b) ls;;
+c) who;;
+d) uptime;;
+*) echo Invalid choice -Bye
+                   esac
+

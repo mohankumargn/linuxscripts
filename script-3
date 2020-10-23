@@ -1,0 +1,10 @@
+#! /bin/bash
+# Read user input
+echo "What is your first name?"
+echo
+echo "What is your last name?"
+read a
+echo
+read b
+echo
+echo Hello $a $b
